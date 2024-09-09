@@ -1,0 +1,6 @@
+@media (max-width: 768px){
+    #bottom_section{
+        display: flex;
+        flex-direction: column;
+    }
+}

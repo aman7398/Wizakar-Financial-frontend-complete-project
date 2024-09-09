@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.welcome-section, .login-section {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.welcome-section {
+    background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-section h1, .welcome-section h2 {
+    margin: 0;
+}
+
+.welcome-section p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.icon p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-section {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.login-section h2 {
+    margin-bottom: 10px;
+}
+
+.login-section p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-options label {
+    display: flex;
+    align-items: center;
+}
+
+.form-options input {
+    margin-right: 5px;
+}
+
+.signin-btn {
+    background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.signin-btn:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .welcome-section, .login-section {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .form-options {
+        flex-direction: column;
+    }
+
+    .form-options a {
+        margin-top: 10px;
+    }
+}
